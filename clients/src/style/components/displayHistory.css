@@ -1,0 +1,10 @@
+.offcanvas-body {
+    padding-left: 30px;
+    font-family: inherit;
+    background-color: #eceeff;
+    padding-top: 30px;
+}
+
+.date {
+    font-size: smaller;
+}

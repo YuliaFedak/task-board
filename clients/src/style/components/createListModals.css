@@ -1,0 +1,38 @@
+
+
+.modal-header {
+    background-color: #535995;
+}
+
+.modal-footer {
+
+}
+
+.modal-header .btn-close {
+    --bs-btn-close-bg: url("../../media/cross.png");
+    background-size: 20px;
+}
+
+.close-button {
+    width: 110px;
+    border-color: #41418a;
+    background-color: #41418a;
+}
+
+.close-button:hover, .close-button:active, .close-button:focus {
+    background-color: #41418a;
+    border-color: #535995;
+}
+
+.create-button {
+    width: 175px;
+    background-color: white;
+    color: black;
+    border-color: #cdcdd5;
+}
+
+.create-button:hover, .create-button:focus, .create-button:active {
+    background-color: white !important;
+    border-color: #969698 !important;
+    color: black !important;
+}
