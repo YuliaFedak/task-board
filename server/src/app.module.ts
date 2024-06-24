@@ -17,12 +17,18 @@ import {HistoryModule} from "./history/history.module";
         imports: [ConfigModule],
         useFactory: (configService : ConfigService) => ({
             type: 'postgres',
-            host: configService.get('DB_HOST'),
+            host: process.env.DB_HOST,
             port: configService.get('DB_PORT'),
             username: configService.get('DB_USERNAME'),
             password: configService.get('DB_PASSWORD'),
             database: configService.get('DB_NAME'),
             synchronize: true,
+            ssl: {
+                rejectUnauthorized: false,
+            },
+            extra: {
+                ssl: true,
+            },
             entities: [List, Tasks, History],
         }),
           inject: [ConfigService],

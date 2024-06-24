@@ -13,6 +13,6 @@ async function bootstrap() {
     res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     next();
   });
-  await app.listen(5000);
+  await app.listen(process.env.PORT || 5000);
 }
 bootstrap();
