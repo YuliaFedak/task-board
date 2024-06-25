@@ -5,7 +5,9 @@ const cors = require('cors');
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.use(cors());
+  app.use(cors({
+    origin: "https://main--task-board-1.netlify.app/"
+  }));
   app.setGlobalPrefix('api')
   app.use((req: any, res: any, next: any) => {
     res.header('Access-Control-Allow-Origin', '*');
