@@ -4,7 +4,7 @@ import {Form} from "react-bootstrap";
 import DatePicker from "react-datepicker";
 import Button from "react-bootstrap/Button";
 import {useUpdateTaskMutation} from "../../services/ListService";
-import {CreateTask, ITasks, UpdateTask} from "../../models/ITasks";
+import {ITasks, UpdateTask} from "../../models/ITasks";
 import {IList} from "../../models/IList";
 
 const UpdateTaskModal = ({list, task, show, onHide }: {list: IList, task: ITasks; show: boolean; onHide: () => void; }) => {

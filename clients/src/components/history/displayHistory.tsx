@@ -18,7 +18,7 @@ const DisplayHistory = () => {
 
     return (
         <>
-            <Button className="btn-history" onClick={handleShow}><img className="history-img" src={history}/> History</Button>
+            <Button className="btn-history" onClick={handleShow}><img alt="reverse" className="history-img" src={history}/> History</Button>
             <Offcanvas show={show} onHide={handleClose} placement={"end"}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>History</Offcanvas.Title>

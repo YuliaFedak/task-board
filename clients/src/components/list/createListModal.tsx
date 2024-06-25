@@ -21,7 +21,6 @@ const MyVerticallyCenteredModal = (props: any) => {
 
         try {
             await createList({name, body: name} as CreateList)
-
         } catch (e) {
             console.error("Error creating list:", e);
         }

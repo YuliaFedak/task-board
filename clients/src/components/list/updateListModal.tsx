@@ -22,7 +22,6 @@ const MyVerticallyUpdateCenteredModal = ({list, show, onHide }: {list: IList; sh
 
         try {
             await updateList({id: list.id, name: name})
-
         } catch (e) {
             console.error("Error creating list:", e);
         }

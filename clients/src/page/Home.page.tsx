@@ -1,9 +1,8 @@
 import React from 'react';
-import {Button, Container, Row, Col, DropdownButton, Dropdown, Card, CardText, Offcanvas} from "react-bootstrap";
+import {Button, Container, Row, Col, DropdownButton, Dropdown, Card, CardText} from "react-bootstrap";
 import "../style/home.css"
 import plus from "../media/plus.png"
 import blackPlus from "../media/blackplus.png"
-import history from "../media/history.png"
 import menu from "../media/menu.png"
 import edit from "../media/edit.png"
 import grayPlus from "../media/grayplus.png"
@@ -19,7 +18,7 @@ import {
 } from "../services/ListService";
 import {IList} from "../models/IList";
 import MyVerticallyUpdateCenteredModal from "../components/list/updateListModal";
-import {ITasks, UpdateTask} from "../models/ITasks";
+import {ITasks} from "../models/ITasks";
 import UpdateTaskModal from "../components/task/updateTaskModal";
 import DisplayHistory from "../components/history/displayHistory";
 
