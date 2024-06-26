@@ -6,7 +6,7 @@ import {IHistory} from "../models/IHistory";
 export const listAPI = createApi({
     reducerPath: 'listAPI',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:5000/api/'
+        baseUrl: 'https://task-board-1.onrender.com/api/'
     }),
     tagTypes: ['List', "History"],
     endpoints: (build) => ({
